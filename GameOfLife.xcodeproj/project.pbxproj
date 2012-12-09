@@ -26,6 +26,7 @@
 		5C0E7FE71670226700763E30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FE61670226700763E30 /* Default-568h@2x.png */; };
 		5C0E7FFF1670233000763E30 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FFE1670233000763E30 /* GHUnitIOS.framework */; };
 		5C0E8001167023D300763E30 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E8000167023D200763E30 /* QuartzCore.framework */; };
+		5CFD90631674729700EDE77B /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90621674729700EDE77B /* GameTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		5C0E7FEB1670229C00763E30 /* GHUnitIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GHUnitIOS.xcodeproj; path = "gh-unit/Project-iOS/GHUnitIOS.xcodeproj"; sourceTree = "<group>"; };
 		5C0E7FFE1670233000763E30 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "gh-unit/Project-iOS/build/Framework/GHUnitIOS.framework"; sourceTree = "<group>"; };
 		5C0E8000167023D200763E30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5CFD90621674729700EDE77B /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				5C0E7FD71670226700763E30 /* Supporting Files */,
+				5CFD90621674729700EDE77B /* GameTest.m */,
 			);
 			path = "UT-GameOfLife";
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0E7FDD1670226700763E30 /* main.m in Sources */,
+				5CFD90631674729700EDE77B /* GameTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +505,7 @@
 				5C0E7FCC1670215B00763E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C0E7FE81670226700763E30 /* Build configuration list for PBXNativeTarget "UT-GameOfLife" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +514,7 @@
 				5C0E7FEA1670226700763E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
