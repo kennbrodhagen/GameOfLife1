@@ -16,5 +16,7 @@
 
 -(id) initWithRows:(NSUInteger) rows andColumns:(NSUInteger) columns;
 -(Cell *) cellAtRow:(NSUInteger) row andColumn:(NSUInteger) column;
+-(NSArray *) neighborsForCell:(Cell *) cell;
+
 
 @end

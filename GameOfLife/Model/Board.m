@@ -37,6 +37,31 @@
 	return [_cells objectAtIndex:index];
 }
 
+-(NSArray *) neighborsForCell:(Cell *) cell
+{
+	NSUInteger row, col;
+	for (int r = 0; r < self.rows; ++r)
+		for (int c = 0; c < self.columns; ++c)
+			if (cell == [self cellAtRow:r andColumn:c])
+			{
+				row = r;
+				col = c;
+				break;
+			}
+        
+	NSArray * result = [NSArray arrayWithObjects:
+                        [self cellAtRow:(row - 1) andColumn:(col - 1)],
+                        [self cellAtRow:(row - 1) andColumn:(col)],
+                        [self cellAtRow:(row - 1) andColumn:(col + 1)],
+                        [self cellAtRow:(row) andColumn:(col - 1)],
+                        [self cellAtRow:(row) andColumn:(col + 1)],
+                        [self cellAtRow:(row + 1) andColumn:(col - 1)],
+                        [self cellAtRow:(row + 1) andColumn:(col)],
+                        [self cellAtRow:(row + 1) andColumn:(col + 1)],
+                        
+                        nil];
+	return result;
+}
 
 
 @end

@@ -11,9 +11,7 @@
 
 @interface Game : NSObject
 
--(id) initWithBoard:(Board *) board;
 -(NSUInteger) livingCount:(NSArray *) neighbors;
--(Board *) boardForNextRound;
--(NSArray *) neighborsForCell:(Cell *) cell;
+-(Board *) boardForNextRound:(Board *) board;
 
 @end

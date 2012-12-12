@@ -9,47 +9,7 @@
 #import "Game.h"
 
 @implementation Game
-{
-	Board * _board;
-}
 
--(id) initWithBoard:(Board *) board
-{
-	self = [super init];
-	if (self != nil)
-	{
-		_board = board;
-	}
-	return self;
-}
-
--(NSArray *) neighborsForCell:(Cell *) cell
-{
-	NSUInteger row, col;
-	for (int r = 0; r < _board.rows; ++r)
-		for (int c = 0; c < _board.columns; ++c)
-			if (cell == [_board cellAtRow:r andColumn:c])
-			{
-				row = r;
-				col = c;
-				break;
-			}
-    
-    NSLog(@"row = %d col = %d", row, col);
-    
-	NSArray * result = [NSArray arrayWithObjects:
-                        [_board cellAtRow:(row - 1) andColumn:(col - 1)],
-                        [_board cellAtRow:(row - 1) andColumn:(col)],
-                        [_board cellAtRow:(row - 1) andColumn:(col + 1)],
-                        [_board cellAtRow:(row) andColumn:(col - 1)],
-                        [_board cellAtRow:(row) andColumn:(col + 1)],
-                        [_board cellAtRow:(row + 1) andColumn:(col - 1)],
-                        [_board cellAtRow:(row + 1) andColumn:(col)],
-                        [_board cellAtRow:(row + 1) andColumn:(col + 1)],
-                        
-                        nil];
-	return result;
-}
 
 -(NSUInteger) livingCount:(NSArray *) neighbors
 {
@@ -63,14 +23,14 @@
 	return [livingNeighbors count];
 }
 
--(Board *) boardForNextRound
+-(Board *) boardForNextRound:(Board *) board
 {
-	Board * result = [[Board alloc] initWithRows:_board.rows andColumns:_board.columns];
-	for (NSUInteger row = 0; row < _board.rows; ++row)
-		for(NSUInteger col = 0; col < _board.columns; ++col)
+	Board * result = [[Board alloc] initWithRows:board.rows andColumns:board.columns];
+	for (NSUInteger row = 0; row < board.rows; ++row)
+		for(NSUInteger col = 0; col < board.columns; ++col)
 		{
-			Cell * originalCell = [_board cellAtRow:row andColumn:col];
-			NSArray * originalNeighbors = [self neighborsForCell:originalCell];
+			Cell * originalCell = [board cellAtRow:row andColumn:col];
+			NSArray * originalNeighbors = [board neighborsForCell:originalCell];
 			NSUInteger livingNeighbors = [self livingCount:originalNeighbors];
             
 			Cell * newCell = [result cellAtRow:row andColumn:col];

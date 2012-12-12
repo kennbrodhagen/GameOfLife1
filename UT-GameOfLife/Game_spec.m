@@ -25,42 +25,13 @@ NSUInteger static const ANY_UINT = 10;
 -(void) setUp
 {
 	_board = [[Board alloc] initWithRows:ANY_UINT andColumns:ANY_UINT];
-	_game = [self createGameWithBoard:_board];
+	_game = [[Game alloc] init];
 }
 
 -(void) test_Creation
 {
-	Game * gameCreated = [self createGameWithBoard:_board];
+	Game * gameCreated = [[Game alloc] init];
 	GHAssertNotNil(gameCreated, nil);
-}
-
--(void) test_Determines_Neighbor_Cells
-{
-	Cell * targetCell = [_board cellAtRow:1 andColumn:1];
-	
-	Cell * upperLeftNeighbor = [_board cellAtRow:0 andColumn:0];
-	Cell * upperCenterNeighbor = [_board cellAtRow:0 andColumn:1];
-	Cell * upperRightNeighbor = [_board cellAtRow:0 andColumn:2];
-	Cell * leftNeighbor = [_board cellAtRow:1 andColumn:0];
-	Cell * rightNeighbor = [_board cellAtRow:1 andColumn:2];
-	Cell * lowerLeftNeighbor = [_board cellAtRow:2 andColumn:0];
-	Cell * lowerCenterNeighbor = [_board cellAtRow:2 andColumn:1];
-	Cell * lowerRightNeighbor = [_board cellAtRow:2 andColumn:2];
-	
-	Cell * notANeighbor = [_board cellAtRow:3 andColumn:3];
-
-	NSArray * neighbors = [_game neighborsForCell:targetCell];
-
-	GHAssertTrue([neighbors containsObject:upperLeftNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:upperCenterNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:upperRightNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:leftNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:rightNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:lowerLeftNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:lowerCenterNeighbor], nil);
-	GHAssertTrue([neighbors containsObject:lowerRightNeighbor], nil);
-
-	GHAssertFalse([neighbors containsObject:notANeighbor], nil);
 }
 
 -(void) test_Counts_Living_Neighbors
@@ -82,7 +53,7 @@ NSUInteger static const ANY_UINT = 10;
 	[_board cellAtRow:1 andColumn:1].state = CellStateAlive;
 	[_board cellAtRow:1 andColumn:0].state = CellStateAlive;
 
-	Board * nextBoard = [_game boardForNextRound];
+	Board * nextBoard = [_game boardForNextRound:_board];
 
 	GHAssertEquals([nextBoard cellAtRow:0 andColumn:0].state, CellStateAlive, nil);
 	GHAssertEquals([nextBoard cellAtRow:0 andColumn:1].state, CellStateAlive, nil);
@@ -90,9 +61,5 @@ NSUInteger static const ANY_UINT = 10;
 	GHAssertEquals([nextBoard cellAtRow:1 andColumn:0].state, CellStateAlive, nil);
 }
 
--(Game *) createGameWithBoard:(Board *) board
-{
-	return [[Game alloc] initWithBoard:board];
-}
 
 @end
