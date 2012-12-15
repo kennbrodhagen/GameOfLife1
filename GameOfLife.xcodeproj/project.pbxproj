@@ -38,6 +38,7 @@
 		5CD709A0167C0BE20026F100 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC21670215B00763E30 /* Default.png */; };
 		5CD709A1167C0BE20026F100 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC41670215B00763E30 /* Default@2x.png */; };
 		5CD709A2167C0BE20026F100 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC61670215B00763E30 /* Default-568h@2x.png */; };
+		5CD709B4167C0CE10026F100 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD709B1167C0CCD0026F100 /* libKIF.a */; };
 		5CFD90631674729700EDE77B /* Game_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90621674729700EDE77B /* Game_spec.m */; };
 		5CFD90671678128A00EDE77B /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
 		5CFD90681678128A00EDE77B /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
@@ -78,6 +79,20 @@
 			remoteGlobalIDString = 0097C44613BA7E7400D3BEF0;
 			remoteInfo = "Run make in Project-iOS to build";
 		};
+		5CD709B0167C0CCD0026F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAB07268139719AC008AF393;
+			remoteInfo = KIF;
+		};
+		5CD709B2167C0CD70026F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB07267139719AC008AF393;
+			remoteInfo = KIF;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +122,7 @@
 		5C0E8000167023D200763E30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5CD709A6167C0BE20026F100 /* AT-GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT-GameOfLife.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD709A8167C0BE30026F100 /* GameOfLife copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GameOfLife copy-Info.plist"; path = "/Users/kennbrodhagen/Dropbox/code/coderetreat/GameOfLife1/GameOfLife copy-Info.plist"; sourceTree = "<absolute>"; };
+		5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
 		5CFD90621674729700EDE77B /* Game_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game_spec.m; sourceTree = "<group>"; };
 		5CFD90651678128A00EDE77B /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell.h; path = Model/Cell.h; sourceTree = "<group>"; };
 		5CFD90661678128A00EDE77B /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = Model/Cell.m; sourceTree = "<group>"; };
@@ -145,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD709B4167C0CE10026F100 /* libKIF.a in Frameworks */,
 				5CD7099B167C0BE20026F100 /* UIKit.framework in Frameworks */,
 				5CD7099C167C0BE20026F100 /* Foundation.framework in Frameworks */,
 				5CD7099D167C0BE20026F100 /* CoreGraphics.framework in Frameworks */,
@@ -157,6 +174,7 @@
 		5C0E7FA11670215B00763E30 = {
 			isa = PBXGroup;
 			children = (
+				5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */,
 				5C0E7FEB1670229C00763E30 /* GHUnitIOS.xcodeproj */,
 				5C0E7FB61670215B00763E30 /* GameOfLife */,
 				5C0E7FD61670226700763E30 /* UT-GameOfLife */,
@@ -248,6 +266,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5CD709AA167C0CCD0026F100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CD709B1167C0CCD0026F100 /* libKIF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5CFD90641678124100EDE77B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +336,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5CD709B3167C0CD70026F100 /* PBXTargetDependency */,
 			);
 			name = "AT-GameOfLife";
 			productName = GameOfLife;
@@ -339,6 +366,10 @@
 				{
 					ProductGroup = 5C0E7FEC1670229C00763E30 /* Products */;
 					ProjectRef = 5C0E7FEB1670229C00763E30 /* GHUnitIOS.xcodeproj */;
+				},
+				{
+					ProductGroup = 5CD709AA167C0CCD0026F100 /* Products */;
+					ProjectRef = 5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -370,6 +401,13 @@
 			fileType = wrapper.application;
 			path = Tests.app;
 			remoteRef = 5C0E7FFA1670229C00763E30 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5CD709B1167C0CCD0026F100 /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 5CD709B0167C0CCD0026F100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -456,6 +494,11 @@
 			isa = PBXTargetDependency;
 			name = "Run make in Project-iOS to build";
 			targetProxy = 5C0E7FFC167022AD00763E30 /* PBXContainerItemProxy */;
+		};
+		5CD709B3167C0CD70026F100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KIF;
+			targetProxy = 5CD709B2167C0CD70026F100 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -602,7 +645,15 @@
 					"$(inherited)",
 					"RUN_KIF_TESTS=1",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/KIF/**",
+				);
 				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "AT-GameOfLife";
 				WRAPPER_EXTENSION = app;
 			};
@@ -617,7 +668,15 @@
 					"$(inherited)",
 					"RUN_KIF_TESTS=1",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/KIF/**",
+				);
 				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "AT-GameOfLife";
 				WRAPPER_EXTENSION = app;
 			};
