@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "GameOfLifeUIViewController.h"
+#import "AcceptanceTestShim.h"
 
 @implementation AppDelegate
+{
+    GameOfLifeUIViewController * controller;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -16,6 +21,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    controller = [[GameOfLifeUIViewController alloc] initWithNibName:@"GameOfLifeUIViewController" bundle:nil];
+    self.window.rootViewController = controller;
+    
     return YES;
 }
 
@@ -38,6 +47,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    [AcceptanceTestShim run];
+    
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
