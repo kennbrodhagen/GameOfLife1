@@ -26,6 +26,18 @@
 		5C0E7FE71670226700763E30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FE61670226700763E30 /* Default-568h@2x.png */; };
 		5C0E7FFF1670233000763E30 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FFE1670233000763E30 /* GHUnitIOS.framework */; };
 		5C0E8001167023D300763E30 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E8000167023D200763E30 /* QuartzCore.framework */; };
+		5CD70995167C0BE20026F100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7FBC1670215B00763E30 /* main.m */; };
+		5CD70996167C0BE20026F100 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC01670215B00763E30 /* AppDelegate.m */; };
+		5CD70997167C0BE20026F100 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
+		5CD70998167C0BE20026F100 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906A167812E200EDE77B /* Board.m */; };
+		5CD70999167C0BE20026F100 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
+		5CD7099B167C0BE20026F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB01670215B00763E30 /* UIKit.framework */; };
+		5CD7099C167C0BE20026F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB21670215B00763E30 /* Foundation.framework */; };
+		5CD7099D167C0BE20026F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB41670215B00763E30 /* CoreGraphics.framework */; };
+		5CD7099F167C0BE20026F100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FB91670215B00763E30 /* InfoPlist.strings */; };
+		5CD709A0167C0BE20026F100 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC21670215B00763E30 /* Default.png */; };
+		5CD709A1167C0BE20026F100 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC41670215B00763E30 /* Default@2x.png */; };
+		5CD709A2167C0BE20026F100 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E7FC61670215B00763E30 /* Default-568h@2x.png */; };
 		5CFD90631674729700EDE77B /* Game_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90621674729700EDE77B /* Game_spec.m */; };
 		5CFD90671678128A00EDE77B /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
 		5CFD90681678128A00EDE77B /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
@@ -93,6 +105,8 @@
 		5C0E7FEB1670229C00763E30 /* GHUnitIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GHUnitIOS.xcodeproj; path = "gh-unit/Project-iOS/GHUnitIOS.xcodeproj"; sourceTree = "<group>"; };
 		5C0E7FFE1670233000763E30 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "gh-unit/Project-iOS/build/Framework/GHUnitIOS.framework"; sourceTree = "<group>"; };
 		5C0E8000167023D200763E30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5CD709A6167C0BE20026F100 /* AT-GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT-GameOfLife.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD709A8167C0BE30026F100 /* GameOfLife copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GameOfLife copy-Info.plist"; path = "/Users/kennbrodhagen/Dropbox/code/coderetreat/GameOfLife1/GameOfLife copy-Info.plist"; sourceTree = "<absolute>"; };
 		5CFD90621674729700EDE77B /* Game_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game_spec.m; sourceTree = "<group>"; };
 		5CFD90651678128A00EDE77B /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell.h; path = Model/Cell.h; sourceTree = "<group>"; };
 		5CFD90661678128A00EDE77B /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = Model/Cell.m; sourceTree = "<group>"; };
@@ -127,6 +141,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CD7099A167C0BE20026F100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD7099B167C0BE20026F100 /* UIKit.framework in Frameworks */,
+				5CD7099C167C0BE20026F100 /* Foundation.framework in Frameworks */,
+				5CD7099D167C0BE20026F100 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,6 +162,7 @@
 				5C0E7FD61670226700763E30 /* UT-GameOfLife */,
 				5C0E7FAF1670215B00763E30 /* Frameworks */,
 				5C0E7FAD1670215B00763E30 /* Products */,
+				5CD709A8167C0BE30026F100 /* GameOfLife copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +171,7 @@
 			children = (
 				5C0E7FAC1670215B00763E30 /* GameOfLife.app */,
 				5C0E7FD11670226700763E30 /* UT-GameOfLife.app */,
+				5CD709A6167C0BE20026F100 /* AT-GameOfLife.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +299,23 @@
 			productReference = 5C0E7FD11670226700763E30 /* UT-GameOfLife.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5CD70993167C0BE20026F100 /* AT-GameOfLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD709A3167C0BE20026F100 /* Build configuration list for PBXNativeTarget "AT-GameOfLife" */;
+			buildPhases = (
+				5CD70994167C0BE20026F100 /* Sources */,
+				5CD7099A167C0BE20026F100 /* Frameworks */,
+				5CD7099E167C0BE20026F100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AT-GameOfLife";
+			productName = GameOfLife;
+			productReference = 5CD709A6167C0BE20026F100 /* AT-GameOfLife.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -302,6 +345,7 @@
 			targets = (
 				5C0E7FAB1670215B00763E30 /* GameOfLife */,
 				5C0E7FD01670226700763E30 /* UT-GameOfLife */,
+				5CD70993167C0BE20026F100 /* AT-GameOfLife */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +397,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CD7099E167C0BE20026F100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD7099F167C0BE20026F100 /* InfoPlist.strings in Resources */,
+				5CD709A0167C0BE20026F100 /* Default.png in Resources */,
+				5CD709A1167C0BE20026F100 /* Default@2x.png in Resources */,
+				5CD709A2167C0BE20026F100 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,6 +434,18 @@
 				5CFD90701678136200EDE77B /* Game.m in Sources */,
 				5CFD9079167816AB00EDE77B /* Board_spec.m in Sources */,
 				5CFD907A167816AB00EDE77B /* Cell_spec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD70994167C0BE20026F100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD70995167C0BE20026F100 /* main.m in Sources */,
+				5CD70996167C0BE20026F100 /* AppDelegate.m in Sources */,
+				5CD70997167C0BE20026F100 /* Cell.m in Sources */,
+				5CD70998167C0BE20026F100 /* Board.m in Sources */,
+				5CD70999167C0BE20026F100 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +593,36 @@
 			};
 			name = Release;
 		};
+		5CD709A4167C0BE20026F100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
+				PRODUCT_NAME = "AT-GameOfLife";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5CD709A5167C0BE20026F100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
+				PRODUCT_NAME = "AT-GameOfLife";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -552,6 +649,15 @@
 			buildConfigurations = (
 				5C0E7FE91670226700763E30 /* Debug */,
 				5C0E7FEA1670226700763E30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD709A3167C0BE20026F100 /* Build configuration list for PBXNativeTarget "AT-GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD709A4167C0BE20026F100 /* Debug */,
+				5CD709A5167C0BE20026F100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
