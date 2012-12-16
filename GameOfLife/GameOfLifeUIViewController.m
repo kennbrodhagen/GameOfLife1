@@ -13,6 +13,9 @@
 @end
 
 @implementation GameOfLifeUIViewController
+{
+    BOOL isStarted;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,4 +38,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startStopPressed
+{
+//    self.startStopButton.titleLabel.text = @"Stop";
+    if (isStarted)
+    {
+        [self.startStopButton setTitle:@"Start" forState:UIControlStateNormal];
+        isStarted = NO;
+    }
+    else
+    {
+        [self.startStopButton setTitle:@"Stop" forState:UIControlStateNormal];
+        isStarted = YES;
+    }
+    
+}
 @end

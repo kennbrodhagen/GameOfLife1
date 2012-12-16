@@ -46,7 +46,20 @@
 
 -(void) addTestSteps
 {
-    [self addStep:[KIFTestStep stepThatFails]];
+    // Confirm there is a start button and tap it
+    [self addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Start"]];
+    
+    // Confirm that the button changes to say "stop"
+    [self addStep:[KIFTestStep stepToWaitForAbsenceOfViewWithAccessibilityLabel:@"Start"]];
+    [self addStep:[KIFTestStep stepToWaitForTappableViewWithAccessibilityLabel:@"Stop"]];
+    
+    // Tap the Stop button
+    [self addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Stop"]];
+    
+    // Confirm that the button changes to say "Start"
+    [self addStep:[KIFTestStep stepToWaitForAbsenceOfViewWithAccessibilityLabel:@"Stop"]];
+    [self addStep:[KIFTestStep stepToWaitForTappableViewWithAccessibilityLabel:@"Start"]];
+    
 }
 
 @end

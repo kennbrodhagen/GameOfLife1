@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GameOfLifeUIViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *startStopButton;
 
+- (IBAction)startStopPressed;
 @end
