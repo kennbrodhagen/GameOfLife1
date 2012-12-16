@@ -40,7 +40,6 @@
 
 - (IBAction)startStopPressed
 {
-//    self.startStopButton.titleLabel.text = @"Stop";
     if (isStarted)
     {
         [self.startStopButton setTitle:@"Start" forState:UIControlStateNormal];
@@ -53,4 +52,5 @@
     }
     
 }
+
 @end
