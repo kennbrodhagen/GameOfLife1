@@ -1,6 +1,6 @@
 [submodule "gh-unit"]
 	path = gh-unit
-	url = git@github.com:kennbrodhagen/gh-unit.git
+	url = https://github.com/kennbrodhagen/gh-unit.git
 [submodule "KIF"]
 	path = KIF
 	url = https://github.com/kennbrodhagen/KIF.git
