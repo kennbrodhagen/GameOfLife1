@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'OC-GameOfLife' target in the 'OC-GameOfLife' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <SenTestingKit/SenTestingKit.h>
+#endif

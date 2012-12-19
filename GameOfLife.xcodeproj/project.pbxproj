@@ -59,6 +59,18 @@
 		5CFD90701678136200EDE77B /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
 		5CFD9079167816AB00EDE77B /* Board_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD9077167816AB00EDE77B /* Board_spec.m */; };
 		5CFD907A167816AB00EDE77B /* Cell_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD9078167816AB00EDE77B /* Cell_spec.m */; };
+		C294C49E1681FCCA009C668C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C294C49D1681FCCA009C668C /* SenTestingKit.framework */; };
+		C294C49F1681FCCA009C668C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB01670215B00763E30 /* UIKit.framework */; };
+		C294C4A01681FCCA009C668C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB21670215B00763E30 /* Foundation.framework */; };
+		C294C4A61681FCCA009C668C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C294C4A41681FCCA009C668C /* InfoPlist.strings */; };
+		C294C4B21681FF1F009C668C /* Board_Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4AE1681FF1F009C668C /* Board_Spec.m */; };
+		C294C4B31681FF1F009C668C /* Cell_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4AF1681FF1F009C668C /* Cell_spec.m */; };
+		C294C4B41681FF1F009C668C /* Game_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4B01681FF1F009C668C /* Game_spec.m */; };
+		C294C4B51681FF1F009C668C /* GameOfLifeUIViewController_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */; };
+		C294C4B616820004009C668C /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
+		C294C4B716820007009C668C /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906A167812E200EDE77B /* Board.m */; };
+		C294C4B81682000A009C668C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
+		C294C4B916820019009C668C /* GameOfLifeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD709C4167C127D0026F100 /* GameOfLifeUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +115,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AAB07267139719AC008AF393;
 			remoteInfo = KIF;
+		};
+		C294C4BA168203F6009C668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C0E7FA31670215B00763E30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C294C49B1681FCCA009C668C;
+			remoteInfo = "OC-GameOfLife";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -150,6 +169,15 @@
 		5CFD906E1678136200EDE77B /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Model/Game.m; sourceTree = "<group>"; };
 		5CFD9077167816AB00EDE77B /* Board_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board_spec.m; sourceTree = "<group>"; };
 		5CFD9078167816AB00EDE77B /* Cell_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_spec.m; sourceTree = "<group>"; };
+		C294C49C1681FCCA009C668C /* OC-GameOfLife.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OC-GameOfLife.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C294C49D1681FCCA009C668C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C294C4A31681FCCA009C668C /* OC-GameOfLife-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OC-GameOfLife-Info.plist"; sourceTree = "<group>"; };
+		C294C4A51681FCCA009C668C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C294C4AA1681FCCA009C668C /* OC-GameOfLife-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OC-GameOfLife-Prefix.pch"; sourceTree = "<group>"; };
+		C294C4AE1681FF1F009C668C /* Board_Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board_Spec.m; sourceTree = "<group>"; };
+		C294C4AF1681FF1F009C668C /* Cell_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_spec.m; sourceTree = "<group>"; };
+		C294C4B01681FF1F009C668C /* Game_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game_spec.m; sourceTree = "<group>"; };
+		C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeUIViewController_spec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +214,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C294C4981681FCCA009C668C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C294C49E1681FCCA009C668C /* SenTestingKit.framework in Frameworks */,
+				C294C49F1681FCCA009C668C /* UIKit.framework in Frameworks */,
+				C294C4A01681FCCA009C668C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -197,6 +235,7 @@
 				5CD709BA167C0E610026F100 /* AT-GameOfLife */,
 				5C0E7FD61670226700763E30 /* UT-GameOfLife */,
 				5C0E7FB61670215B00763E30 /* GameOfLife */,
+				C294C4A11681FCCA009C668C /* OC-GameOfLife */,
 				5C0E7FAF1670215B00763E30 /* Frameworks */,
 				5C0E7FAD1670215B00763E30 /* Products */,
 			);
@@ -208,6 +247,7 @@
 				5C0E7FAC1670215B00763E30 /* GameOfLife.app */,
 				5C0E7FD11670226700763E30 /* UT-GameOfLife.app */,
 				5CD709A6167C0BE20026F100 /* AT-GameOfLife.app */,
+				C294C49C1681FCCA009C668C /* OC-GameOfLife.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +260,7 @@
 				5C0E7FB01670215B00763E30 /* UIKit.framework */,
 				5C0E7FB21670215B00763E30 /* Foundation.framework */,
 				5C0E7FB41670215B00763E30 /* CoreGraphics.framework */,
+				C294C49D1681FCCA009C668C /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,6 +361,28 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		C294C4A11681FCCA009C668C /* OC-GameOfLife */ = {
+			isa = PBXGroup;
+			children = (
+				C294C4AE1681FF1F009C668C /* Board_Spec.m */,
+				C294C4AF1681FF1F009C668C /* Cell_spec.m */,
+				C294C4B01681FF1F009C668C /* Game_spec.m */,
+				C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */,
+				C294C4A21681FCCA009C668C /* Supporting Files */,
+			);
+			path = "OC-GameOfLife";
+			sourceTree = "<group>";
+		};
+		C294C4A21681FCCA009C668C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C294C4A31681FCCA009C668C /* OC-GameOfLife-Info.plist */,
+				C294C4A41681FCCA009C668C /* InfoPlist.strings */,
+				C294C4AA1681FCCA009C668C /* OC-GameOfLife-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +397,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C294C4BB168203F6009C668C /* PBXTargetDependency */,
 			);
 			name = GameOfLife;
 			productName = GameOfLife;
@@ -376,6 +440,24 @@
 			productReference = 5CD709A6167C0BE20026F100 /* AT-GameOfLife.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C294C49B1681FCCA009C668C /* OC-GameOfLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C294C4AB1681FCCA009C668C /* Build configuration list for PBXNativeTarget "OC-GameOfLife" */;
+			buildPhases = (
+				C294C4971681FCCA009C668C /* Sources */,
+				C294C4981681FCCA009C668C /* Frameworks */,
+				C294C4991681FCCA009C668C /* Resources */,
+				C294C49A1681FCCA009C668C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OC-GameOfLife";
+			productName = "OC-GameOfLife";
+			productReference = C294C49C1681FCCA009C668C /* OC-GameOfLife.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -410,6 +492,7 @@
 				5C0E7FAB1670215B00763E30 /* GameOfLife */,
 				5C0E7FD01670226700763E30 /* UT-GameOfLife */,
 				5CD70993167C0BE20026F100 /* AT-GameOfLife */,
+				C294C49B1681FCCA009C668C /* OC-GameOfLife */,
 			);
 		};
 /* End PBXProject section */
@@ -482,7 +565,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C294C4991681FCCA009C668C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C294C4A61681FCCA009C668C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C294C49A1681FCCA009C668C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C0E7FA81670215B00763E30 /* Sources */ = {
@@ -531,6 +638,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C294C4971681FCCA009C668C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C294C4B21681FF1F009C668C /* Board_Spec.m in Sources */,
+				C294C4B31681FF1F009C668C /* Cell_spec.m in Sources */,
+				C294C4B41681FF1F009C668C /* Game_spec.m in Sources */,
+				C294C4B51681FF1F009C668C /* GameOfLifeUIViewController_spec.m in Sources */,
+				C294C4B616820004009C668C /* Cell.m in Sources */,
+				C294C4B716820007009C668C /* Board.m in Sources */,
+				C294C4B81682000A009C668C /* Game.m in Sources */,
+				C294C4B916820019009C668C /* GameOfLifeUIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -543,6 +665,11 @@
 			isa = PBXTargetDependency;
 			name = KIF;
 			targetProxy = 5CD709B2167C0CD70026F100 /* PBXContainerItemProxy */;
+		};
+		C294C4BB168203F6009C668C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C294C49B1681FCCA009C668C /* OC-GameOfLife */;
+			targetProxy = C294C4BA168203F6009C668C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -559,6 +686,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C0E7FDA1670226700763E30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C294C4A41681FCCA009C668C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C294C4A51681FCCA009C668C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -726,6 +861,38 @@
 			};
 			name = Release;
 		};
+		C294C4AC1681FCCA009C668C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OC-GameOfLife/OC-GameOfLife-Prefix.pch";
+				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C294C4AD1681FCCA009C668C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OC-GameOfLife/OC-GameOfLife-Prefix.pch";
+				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -764,6 +931,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C294C4AB1681FCCA009C668C /* Build configuration list for PBXNativeTarget "OC-GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C294C4AC1681FCCA009C668C /* Debug */,
+				C294C4AD1681FCCA009C668C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

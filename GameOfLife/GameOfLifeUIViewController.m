@@ -59,13 +59,21 @@
     NSMutableArray * result = [NSMutableArray array];
     for (NSUInteger i = 0; i < 100; ++i)
     {
-        UIView * cellView = [[UIView alloc] init];
-        cellView.backgroundColor = [UIColor lightGrayColor];
-        [result addObject:cellView];
-
+        [result addObject:[self buildCellView]];
     }
 
     return result;
+}
+
+-(UIView *) buildCellView
+{
+    UIView * cellView = [[UIView alloc] init];
+    cellView.backgroundColor = [UIColor lightGrayColor];
+    
+    UITapGestureRecognizer * gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellTapped:)];
+    [cellView addGestureRecognizer:gesture];
+
+    return cellView;
 }
 
 @end
