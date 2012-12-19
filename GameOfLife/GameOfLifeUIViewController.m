@@ -20,8 +20,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self) 
+    {
+        _cellViews = [self createInitialCellViews];
     }
     return self;
 }
@@ -51,6 +52,20 @@
         isStarted = YES;
     }
     
+}
+
+-(NSArray *) createInitialCellViews
+{
+    NSMutableArray * result = [NSMutableArray array];
+    for (NSUInteger i = 0; i < 100; ++i)
+    {
+        UIView * cellView = [[UIView alloc] init];
+        cellView.backgroundColor = [UIColor lightGrayColor];
+        [result addObject:cellView];
+
+    }
+
+    return result;
 }
 
 @end
