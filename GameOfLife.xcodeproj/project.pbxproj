@@ -939,6 +939,7 @@
 				C294C4AD1681FCCA009C668C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
