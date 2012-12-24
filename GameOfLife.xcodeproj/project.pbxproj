@@ -59,14 +59,12 @@
 		5CFD90701678136200EDE77B /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
 		5CFD9079167816AB00EDE77B /* Board_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD9077167816AB00EDE77B /* Board_spec.m */; };
 		5CFD907A167816AB00EDE77B /* Cell_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD9078167816AB00EDE77B /* Cell_spec.m */; };
+		C22EFA8616836CAB00FB0A9B /* KiwiSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C22EFA8516836CAB00FB0A9B /* KiwiSpec.m */; };
+		C22EFA8716836DFB00FB0A9B /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C22EFA7E16836C1B00FB0A9B /* libKiwi.a */; };
 		C294C49E1681FCCA009C668C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C294C49D1681FCCA009C668C /* SenTestingKit.framework */; };
 		C294C49F1681FCCA009C668C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB01670215B00763E30 /* UIKit.framework */; };
 		C294C4A01681FCCA009C668C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB21670215B00763E30 /* Foundation.framework */; };
 		C294C4A61681FCCA009C668C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C294C4A41681FCCA009C668C /* InfoPlist.strings */; };
-		C294C4B21681FF1F009C668C /* Board_Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4AE1681FF1F009C668C /* Board_Spec.m */; };
-		C294C4B31681FF1F009C668C /* Cell_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4AF1681FF1F009C668C /* Cell_spec.m */; };
-		C294C4B41681FF1F009C668C /* Game_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4B01681FF1F009C668C /* Game_spec.m */; };
-		C294C4B51681FF1F009C668C /* GameOfLifeUIViewController_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */; };
 		C294C4B616820004009C668C /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD90661678128A00EDE77B /* Cell.m */; };
 		C294C4B716820007009C668C /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906A167812E200EDE77B /* Board.m */; };
 		C294C4B81682000A009C668C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
@@ -115,6 +113,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = AAB07267139719AC008AF393;
 			remoteInfo = KIF;
+		};
+		C22EFA7D16836C1B00FB0A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		C22EFA7F16836C1B00FB0A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C83C7157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		C22EFA8116836C1B00FB0A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		C22EFA8316836C1B00FB0A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3B16542139967B800E9CC6E;
+			remoteInfo = KiwiExamples;
+		};
+		C22EFA8A16838EDC00FB0A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5015B9E11583A77002E9A98;
+			remoteInfo = Kiwi;
 		};
 		C294C4BA168203F6009C668C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -169,6 +202,8 @@
 		5CFD906E1678136200EDE77B /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Model/Game.m; sourceTree = "<group>"; };
 		5CFD9077167816AB00EDE77B /* Board_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board_spec.m; sourceTree = "<group>"; };
 		5CFD9078167816AB00EDE77B /* Cell_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_spec.m; sourceTree = "<group>"; };
+		C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		C22EFA8516836CAB00FB0A9B /* KiwiSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiSpec.m; sourceTree = "<group>"; };
 		C294C49C1681FCCA009C668C /* OC-GameOfLife.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OC-GameOfLife.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C294C49D1681FCCA009C668C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C294C4A31681FCCA009C668C /* OC-GameOfLife-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OC-GameOfLife-Info.plist"; sourceTree = "<group>"; };
@@ -218,6 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22EFA8716836DFB00FB0A9B /* libKiwi.a in Frameworks */,
 				C294C49E1681FCCA009C668C /* SenTestingKit.framework in Frameworks */,
 				C294C49F1681FCCA009C668C /* UIKit.framework in Frameworks */,
 				C294C4A01681FCCA009C668C /* Foundation.framework in Frameworks */,
@@ -230,11 +266,12 @@
 		5C0E7FA11670215B00763E30 = {
 			isa = PBXGroup;
 			children = (
+				C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */,
 				5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */,
 				5C0E7FEB1670229C00763E30 /* GHUnitIOS.xcodeproj */,
-				5CD709BA167C0E610026F100 /* AT-GameOfLife */,
-				5C0E7FD61670226700763E30 /* UT-GameOfLife */,
 				5C0E7FB61670215B00763E30 /* GameOfLife */,
+				5C0E7FD61670226700763E30 /* UT-GameOfLife */,
+				5CD709BA167C0E610026F100 /* AT-GameOfLife */,
 				C294C4A11681FCCA009C668C /* OC-GameOfLife */,
 				5C0E7FAF1670215B00763E30 /* Frameworks */,
 				5C0E7FAD1670215B00763E30 /* Products */,
@@ -361,6 +398,17 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		C22EFA7316836C1A00FB0A9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C22EFA7E16836C1B00FB0A9B /* libKiwi.a */,
+				C22EFA8016836C1B00FB0A9B /* libKiwi-OSX.a */,
+				C22EFA8216836C1B00FB0A9B /* KiwiTests.octest */,
+				C22EFA8416836C1B00FB0A9B /* KiwiExamples.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C294C4A11681FCCA009C668C /* OC-GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +417,7 @@
 				C294C4B01681FF1F009C668C /* Game_spec.m */,
 				C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */,
 				C294C4A21681FCCA009C668C /* Supporting Files */,
+				C22EFA8516836CAB00FB0A9B /* KiwiSpec.m */,
 			);
 			path = "OC-GameOfLife";
 			sourceTree = "<group>";
@@ -452,6 +501,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C22EFA8B16838EDC00FB0A9B /* PBXTargetDependency */,
 			);
 			name = "OC-GameOfLife";
 			productName = "OC-GameOfLife";
@@ -485,6 +535,10 @@
 				{
 					ProductGroup = 5CD709AA167C0CCD0026F100 /* Products */;
 					ProjectRef = 5CD709A9167C0CCD0026F100 /* KIF.xcodeproj */;
+				},
+				{
+					ProductGroup = C22EFA7316836C1A00FB0A9B /* Products */;
+					ProjectRef = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -524,6 +578,34 @@
 			fileType = archive.ar;
 			path = libKIF.a;
 			remoteRef = 5CD709B0167C0CCD0026F100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C22EFA7E16836C1B00FB0A9B /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = C22EFA7D16836C1B00FB0A9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C22EFA8016836C1B00FB0A9B /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = C22EFA7F16836C1B00FB0A9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C22EFA8216836C1B00FB0A9B /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = C22EFA8116836C1B00FB0A9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C22EFA8416836C1B00FB0A9B /* KiwiExamples.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiExamples.octest;
+			remoteRef = C22EFA8316836C1B00FB0A9B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -642,14 +724,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C294C4B21681FF1F009C668C /* Board_Spec.m in Sources */,
-				C294C4B31681FF1F009C668C /* Cell_spec.m in Sources */,
-				C294C4B41681FF1F009C668C /* Game_spec.m in Sources */,
-				C294C4B51681FF1F009C668C /* GameOfLifeUIViewController_spec.m in Sources */,
 				C294C4B616820004009C668C /* Cell.m in Sources */,
 				C294C4B716820007009C668C /* Board.m in Sources */,
 				C294C4B81682000A009C668C /* Game.m in Sources */,
 				C294C4B916820019009C668C /* GameOfLifeUIViewController.m in Sources */,
+				C22EFA8616836CAB00FB0A9B /* KiwiSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +744,11 @@
 			isa = PBXTargetDependency;
 			name = KIF;
 			targetProxy = 5CD709B2167C0CD70026F100 /* PBXContainerItemProxy */;
+		};
+		C22EFA8B16838EDC00FB0A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kiwi;
+			targetProxy = C22EFA8A16838EDC00FB0A9B /* PBXContainerItemProxy */;
 		};
 		C294C4BB168203F6009C668C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -870,7 +954,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OC-GameOfLife/OC-GameOfLife-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SOURCE_ROOT)/Kiwi/Kiwi",
+				);
 				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
@@ -886,7 +975,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OC-GameOfLife/OC-GameOfLife-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SOURCE_ROOT)/Kiwi/Kiwi",
+				);
 				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;

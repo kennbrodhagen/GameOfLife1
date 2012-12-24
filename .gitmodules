@@ -4,3 +4,6 @@
 [submodule "KIF"]
 	path = KIF
 	url = https://github.com/kennbrodhagen/KIF.git
+[submodule "Kiwi"]
+	path = Kiwi
+	url = https://github.com/allending/Kiwi.git
