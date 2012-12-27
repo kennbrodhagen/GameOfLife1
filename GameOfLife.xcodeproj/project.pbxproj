@@ -59,8 +59,6 @@
 		5CFD90701678136200EDE77B /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
 		5CFD9079167816AB00EDE77B /* Board_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD9077167816AB00EDE77B /* Board_spec.m */; };
 		5CFD907A167816AB00EDE77B /* Cell_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD9078167816AB00EDE77B /* Cell_spec.m */; };
-		C22EFA8616836CAB00FB0A9B /* KiwiSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C22EFA8516836CAB00FB0A9B /* KiwiSpec.m */; };
-		C22EFA8716836DFB00FB0A9B /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C22EFA7E16836C1B00FB0A9B /* libKiwi.a */; };
 		C294C49E1681FCCA009C668C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C294C49D1681FCCA009C668C /* SenTestingKit.framework */; };
 		C294C49F1681FCCA009C668C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB01670215B00763E30 /* UIKit.framework */; };
 		C294C4A01681FCCA009C668C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0E7FB21670215B00763E30 /* Foundation.framework */; };
@@ -69,6 +67,11 @@
 		C294C4B716820007009C668C /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906A167812E200EDE77B /* Board.m */; };
 		C294C4B81682000A009C668C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD906E1678136200EDE77B /* Game.m */; };
 		C294C4B916820019009C668C /* GameOfLifeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD709C4167C127D0026F100 /* GameOfLifeUIViewController.m */; };
+		C2EB2E42168C968700A59F06 /* Board_Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4AE1681FF1F009C668C /* Board_Spec.m */; };
+		C2EB2E43168C968A00A59F06 /* Cell_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4AF1681FF1F009C668C /* Cell_spec.m */; };
+		C2EB2E44168C968C00A59F06 /* Game_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4B01681FF1F009C668C /* Game_spec.m */; };
+		C2EB2E45168C968F00A59F06 /* GameOfLifeUIViewController_spec.m in Sources */ = {isa = PBXBuildFile; fileRef = C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */; };
+		C2EB2E4A168CABD600A59F06 /* UISpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB2E49168CABD600A59F06 /* UISpecs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,19 +145,12 @@
 			remoteGlobalIDString = A3B16542139967B800E9CC6E;
 			remoteInfo = KiwiExamples;
 		};
-		C22EFA8A16838EDC00FB0A9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C22EFA7216836C1A00FB0A9B /* Kiwi.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F5015B9E11583A77002E9A98;
-			remoteInfo = Kiwi;
-		};
-		C294C4BA168203F6009C668C /* PBXContainerItemProxy */ = {
+		C2EB2E46168C9FC200A59F06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5C0E7FA31670215B00763E30 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C294C49B1681FCCA009C668C;
-			remoteInfo = "OC-GameOfLife";
+			remoteGlobalIDString = 5C0E7FAB1670215B00763E30;
+			remoteInfo = GameOfLife;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -213,6 +209,8 @@
 		C294C4AF1681FF1F009C668C /* Cell_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_spec.m; sourceTree = "<group>"; };
 		C294C4B01681FF1F009C668C /* Game_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game_spec.m; sourceTree = "<group>"; };
 		C294C4B11681FF1F009C668C /* GameOfLifeUIViewController_spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeUIViewController_spec.m; sourceTree = "<group>"; };
+		C2EB2E48168CABD600A59F06 /* UISpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpecs.h; sourceTree = "<group>"; };
+		C2EB2E49168CABD600A59F06 /* UISpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISpecs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,7 +251,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22EFA8716836DFB00FB0A9B /* libKiwi.a in Frameworks */,
 				C294C49E1681FCCA009C668C /* SenTestingKit.framework in Frameworks */,
 				C294C49F1681FCCA009C668C /* UIKit.framework in Frameworks */,
 				C294C4A01681FCCA009C668C /* Foundation.framework in Frameworks */,
@@ -312,6 +309,8 @@
 				5CD709C3167C127D0026F100 /* GameOfLifeUIViewController.h */,
 				5CD709C4167C127D0026F100 /* GameOfLifeUIViewController.m */,
 				5CD709C5167C127D0026F100 /* GameOfLifeUIViewController.xib */,
+				C2EB2E48168CABD600A59F06 /* UISpecs.h */,
+				C2EB2E49168CABD600A59F06 /* UISpecs.m */,
 			);
 			path = GameOfLife;
 			sourceTree = "<group>";
@@ -446,7 +445,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C294C4BB168203F6009C668C /* PBXTargetDependency */,
 			);
 			name = GameOfLife;
 			productName = GameOfLife;
@@ -501,7 +499,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C22EFA8B16838EDC00FB0A9B /* PBXTargetDependency */,
+				C2EB2E47168C9FC200A59F06 /* PBXTargetDependency */,
 			);
 			name = "OC-GameOfLife";
 			productName = "OC-GameOfLife";
@@ -685,6 +683,7 @@
 				5CFD906F1678136200EDE77B /* Game.m in Sources */,
 				5CD709BD167C0E610026F100 /* AcceptanceTestShim.m in Sources */,
 				5CD709C6167C127D0026F100 /* GameOfLifeUIViewController.m in Sources */,
+				C2EB2E4A168CABD600A59F06 /* UISpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,7 +727,10 @@
 				C294C4B716820007009C668C /* Board.m in Sources */,
 				C294C4B81682000A009C668C /* Game.m in Sources */,
 				C294C4B916820019009C668C /* GameOfLifeUIViewController.m in Sources */,
-				C22EFA8616836CAB00FB0A9B /* KiwiSpec.m in Sources */,
+				C2EB2E42168C968700A59F06 /* Board_Spec.m in Sources */,
+				C2EB2E43168C968A00A59F06 /* Cell_spec.m in Sources */,
+				C2EB2E44168C968C00A59F06 /* Game_spec.m in Sources */,
+				C2EB2E45168C968F00A59F06 /* GameOfLifeUIViewController_spec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,15 +747,10 @@
 			name = KIF;
 			targetProxy = 5CD709B2167C0CD70026F100 /* PBXContainerItemProxy */;
 		};
-		C22EFA8B16838EDC00FB0A9B /* PBXTargetDependency */ = {
+		C2EB2E47168C9FC200A59F06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Kiwi;
-			targetProxy = C22EFA8A16838EDC00FB0A9B /* PBXContainerItemProxy */;
-		};
-		C294C4BB168203F6009C668C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C294C49B1681FCCA009C668C /* OC-GameOfLife */;
-			targetProxy = C294C4BA168203F6009C668C /* PBXContainerItemProxy */;
+			target = 5C0E7FAB1670215B00763E30 /* GameOfLife */;
+			targetProxy = C2EB2E46168C9FC200A59F06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -844,6 +841,7 @@
 				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
 				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -855,6 +853,7 @@
 				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
 				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -948,6 +947,7 @@
 		C294C4AC1681FCCA009C668C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameOfLife.app/GameOfLife";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -961,7 +961,8 @@
 				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
+				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -969,6 +970,7 @@
 		C294C4AD1681FCCA009C668C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameOfLife.app/GameOfLife";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -982,7 +984,8 @@
 				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
+				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

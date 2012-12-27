@@ -7,6 +7,7 @@
 //
 
 #import "GameOfLifeUIViewController.h"
+#import "UISpecs.h"
 
 @interface GameOfLifeUIViewController ()
 
@@ -22,7 +23,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) 
     {
-        _cellViews = [self createInitialCellViews];
     }
     return self;
 }
@@ -30,13 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self createInitialCellViews];
 }
 
 - (IBAction)startStopPressed
@@ -54,26 +48,46 @@
     
 }
 
--(NSArray *) createInitialCellViews
+-(void) createInitialCellViews
 {
-    NSMutableArray * result = [NSMutableArray array];
-    for (NSUInteger i = 0; i < 100; ++i)
+    for (NSUInteger row = 0; row < 10; ++row)
     {
-        [result addObject:[self buildCellView]];
+        for (NSUInteger column = 0; column <10; ++column)
+        {
+            [self.gameBoardView addSubview:[self buildCellViewForRow:row column:column]];
+        }
     }
-
-    return result;
 }
 
--(UIView *) buildCellView
+-(UIView *) buildCellViewForRow:(NSUInteger) row column:(NSUInteger) column
 {
-    UIView * cellView = [[UIView alloc] init];
-    cellView.backgroundColor = [UIColor lightGrayColor];
+    UIView * cellView = [[UIView alloc] initWithFrame:[self frameForCellAtRow:row column:column]];
+    cellView.backgroundColor = [UISpecs deadColor];
     
     UITapGestureRecognizer * gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellTapped:)];
     [cellView addGestureRecognizer:gesture];
+    
 
     return cellView;
+}
+
+-(void) handleCellViewTap:(UIView *) cellView
+{
+    if ([cellView.backgroundColor isEqual:[UISpecs deadColor]])
+        cellView.backgroundColor = [UISpecs aliveColor];
+    else
+         cellView.backgroundColor = [UISpecs deadColor];
+}
+
+-(CGRect) frameForCellAtRow:(NSUInteger) row column:(NSUInteger) column
+{
+    NSUInteger const NUM_ROWS = 10;
+    NSUInteger const NUM_COLS = 10;
+    NSUInteger cellWidth = self.gameBoardView.frame.size.width / NUM_COLS;
+    NSUInteger cellHeight = self.gameBoardView.frame.size.height / NUM_ROWS;
+    NSUInteger cellX = column * cellWidth;
+    NSUInteger cellY = row * cellHeight;
+    return CGRectMake(cellX, cellY, cellWidth, cellHeight);
 }
 
 @end

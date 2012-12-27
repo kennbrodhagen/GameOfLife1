@@ -10,7 +10,7 @@
 
 @interface GameOfLifeUIViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *startStopButton;
-@property (nonatomic, readonly) NSArray * cellViews;
+@property (weak, nonatomic) IBOutlet UIView *gameBoardView;
 
 - (IBAction)startStopPressed;
 @end
