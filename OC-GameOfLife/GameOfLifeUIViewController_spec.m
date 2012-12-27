@@ -5,6 +5,7 @@
 //  Created by Kenn Brodhagen on 12/15/12.
 //  Copyright (c) 2012 Hipsware LLC. All rights reserved.
 //
+#if 1
 
 #import "GameOfLifeUIViewController.h"
 #import "UISpecs.h"
@@ -105,3 +106,4 @@
 
 
 @end
+#endif

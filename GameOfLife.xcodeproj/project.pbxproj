@@ -667,7 +667,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n#${PROJECT_DIR}/CommandLineUnitTests.sh\n#echo ${PROJECT_DIR}\n${PROJECT_DIR}/CommandLineTest.rb\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -961,7 +961,7 @@
 				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = NO;
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -984,7 +984,7 @@
 				INFOPLIST_FILE = "OC-GameOfLife/OC-GameOfLife-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = NO;
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
